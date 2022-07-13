@@ -4,6 +4,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { AboutComponent } from './pages/about/about.component';
+import { CommentsComponents } from './pages/comments/comments.component';
+
 
 const routes: Routes = [
   {
@@ -22,6 +24,10 @@ const routes: Routes = [
     path: 'posts',
     // loadChildren: './pages/posts/posts.module#PostsModule'
     loadChildren: () => import('./pages/posts/posts.module').then(m => m.PostsModule)
+  },
+  {
+    path: 'comments',
+    component: CommentsComponents
   },
   {
     path: '**',

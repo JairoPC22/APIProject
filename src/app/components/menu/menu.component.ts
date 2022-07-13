@@ -26,7 +26,7 @@ export class MenuComponent implements OnInit {
     },
     {
       name: 'Comments',
-      path: 'commentss'
+      path: '/comments'
     }
   ];
 

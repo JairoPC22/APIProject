@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { PostsComponent } from './posts.component';
+import { CommentsComponents } from './comments.component';
 
 const routes: Routes = [
   {
     path: '',  // No se coloca texto en el path
-    component: PostsComponent
+    component: CommentsComponents
   }
 ];
 
@@ -13,4 +13,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class PostsRoutingModule { }
+export class CommentsRoutingModule { }
