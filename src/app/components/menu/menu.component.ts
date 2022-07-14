@@ -27,6 +27,22 @@ export class MenuComponent implements OnInit {
     {
       name: 'Comments',
       path: '/comments'
+    },
+    {
+      name: 'Album',
+      path: '/album'
+    },
+    {
+      name: 'Photos',
+      path: '/photos'
+    },
+    {
+      name: 'Users',
+      path: '/users'
+    },
+    {
+      name: 'Todos',
+      path: '/todos'
     }
   ];
 

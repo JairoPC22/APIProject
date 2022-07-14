@@ -1,17 +1,20 @@
-<h1>Comentarios</h1>
+<h1>Usuarios</h1>
 
 <br>
-<div *ngFor="let data of comentarios | async">
+<div *ngFor="let data of usuarios | async">
   <div class="card">
     <div class="card-body">
       <div class="card-title">
         <h5>{{ data.name }}</h5>
       </div>
       <div class="card-title">
+        <h5>{{ data.username }}</h5>
+      </div>
+      <div class="card-title">
         <h5>{{ data.email }}</h5>
       </div>
       <div class="card-text">
-        {{ data.body }}
+        {{ data.address }}
       </div>
     </div>
   </div>

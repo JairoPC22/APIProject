@@ -5,6 +5,10 @@ import { HomeComponent } from './pages/home/home.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { AboutComponent } from './pages/about/about.component';
 import { CommentsComponents } from './pages/comments/comments.component';
+import { AlbumComponents } from './pages/albums/album.component';
+import {PhotosComponents} from "./pages/photos/photos..component";
+import {UsersComponents} from "./pages/users/users.component";
+import {TodosComponents} from "./pages/todos/todos.component";
 
 
 const routes: Routes = [
@@ -28,6 +32,22 @@ const routes: Routes = [
   {
     path: 'comments',
     component: CommentsComponents
+  },
+  {
+    path: 'album',
+    component: AlbumComponents
+  },
+  {
+    path: 'photos',
+    component: PhotosComponents
+  },
+  {
+    path: 'users',
+    component: UsersComponents
+  },
+  {
+    path: 'todos',
+    loadChildren: () => import('./pages/todos/todos.module').then(m => m.TodosModule)
   },
   {
     path: '**',

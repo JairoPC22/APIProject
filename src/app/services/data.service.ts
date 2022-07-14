@@ -14,4 +14,16 @@ export class DataService {
   getComments(){
     return this.http.get('https://jsonplaceholder.typicode.com/comments');
   }
+  getAlbum(){
+    return this.http.get('https://jsonplaceholder.typicode.com/albums');
+  }
+  getPhotos(){
+    return this.http.get('https://jsonplaceholder.typicode.com/photos');
+  }
+  getUsers(){
+    return this.http.get('https://jsonplaceholder.typicode.com/users');
+  }
+  getTodos(){
+    return this.http.get('https://jsonplaceholder.typicode.com/todos');
+  }
 }
